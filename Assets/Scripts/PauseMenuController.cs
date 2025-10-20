@@ -5,7 +5,7 @@ public class PauseMenuController : MonoBehaviour
 {
     public void GoToPauseMenu()
     {
-        Time.timeScale = 0f; // Pause the game
-        SceneManager.LoadScene("Pause"); // Load pause scene (replaces current scene)
+        Time.timeScale = 0f;
+        SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
     }
 }
