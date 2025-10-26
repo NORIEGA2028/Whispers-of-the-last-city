@@ -10,7 +10,7 @@ public class MainMenuButtons : MonoBehaviour
     public void NewGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(newGameLevel);
+        SceneManager.LoadScene("Level Scene");
     }
     
     public void ContinueGame()
