@@ -26,6 +26,7 @@
   <Project Path="UnityEditor.TestRunner.csproj" />
   <Project Path="Unity.VisualScripting.Core.csproj" />
   <Project Path="Unity.RenderPipelines.Universal.Runtime.csproj" />
+  <Project Path="Unity.AI.Navigation.Samples.csproj" />
   <Project Path="Unity.CollabProxy.Editor.csproj" />
   <Project Path="Unity.AI.Navigation.Editor.ConversionSystem.csproj" />
   <Project Path="Unity.VisualScripting.State.Editor.csproj" />
@@ -61,6 +62,7 @@
   <Project Path="Unity.RenderPipeline.Universal.ShaderLibrary.csproj" />
   <Project Path="Unity.Rendering.LightTransport.Editor.csproj" />
   <Project Path="Unity.InputSystem.DocCodeSamples.csproj" />
+  <Project Path="Unity.AI.Navigation.Samples.Initialization.Editor.csproj" />
   <Project Path="Unity.RenderPipelines.Universal.Shaders.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Runtime.Shared.csproj" />
   <Project Path="Unity.2D.Sprite.AIIntegration.Editor.csproj" />
