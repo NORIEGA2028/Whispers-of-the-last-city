@@ -10,11 +10,9 @@ public class MonsterAI : MonoBehaviour
     [Header("Target & Combat")]
     public Transform Target;
     public float AttackDistance = 2f;
-    public float attackCooldown = 1.5f; // Time between attacks
+    public float attackCooldown = 1.5f;
 
-    [Header("Game Over UI")]
-    [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private TextMeshProUGUI gameOverText;
+    [Header("Game Over Settings")]
     [SerializeField] private float delayBeforeGameOver = 1f;
 
     [Header("Settings")]
@@ -25,6 +23,7 @@ public class MonsterAI : MonoBehaviour
     private float m_Distance;
     private float nextAttackTime = 0f;
     private bool playerIsDead = false;
+    private Timer timerScript;
 
     void Start()
     {
@@ -43,21 +42,19 @@ public class MonsterAI : MonoBehaviour
         m_Agent = GetComponent<NavMeshAgent>();
         m_Animator = GetComponent<Animator>();
 
+        // Find the Timer script in the scene
+        timerScript = FindObjectOfType<Timer>();
+        if (timerScript == null)
+        {
+            Debug.LogWarning("Timer script not found in scene!");
+        }
+
         // Disable automatic updates if using root motion
         if (useRootMotion)
         {
             m_Agent.updatePosition = false;
             m_Agent.updateRotation = false;
         }
-
-        // Find GameOverPanel if not manually assigned
-        if (gameOverPanel == null)
-        {
-            gameOverPanel = GameObject.Find("GameOverPanel");
-        }
-
-        if (gameOverPanel != null)
-            gameOverPanel.SetActive(false);
 
         if (Target != null)
             Debug.Log("Monster initialized. Target: " + Target.name);
@@ -130,25 +127,19 @@ public class MonsterAI : MonoBehaviour
         if (m_Animator != null)
             m_Animator.SetBool("isAttacking", true);
 
-        // Wait 1 second after the attack animation begins
+        // Wait before showing game over
         yield return new WaitForSeconds(delayBeforeGameOver);
 
-        // Show GameOverPanel
-        GameOver();
-    }
-
-   void GameOver()
-    {
-        if (gameOverPanel != null)
-            gameOverPanel.SetActive(true);
-        Time.timeScale = 0f; // Pause the game
-    }
-
-
-    public void RestartGame()
-    {
-        Time.timeScale = 1f; // Resume normal time
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // Trigger game over through Timer script
+        if (timerScript != null)
+        {
+            timerScript.GameOver();
+            Debug.Log("Game Over triggered by Monster!");
+        }
+        else
+        {
+            Debug.LogError("Cannot trigger Game Over - Timer script not found!");
+        }
     }
 
     void OnAnimatorMove()

@@ -37,16 +37,16 @@ public class Timer : MonoBehaviour
         }
     }
 
-    void GameOver()
-    {
-        if (gameOverPanel != null)
-            gameOverPanel.SetActive(true);
-        Time.timeScale = 0f; // Pause the game
-    }
+public void GameOver() // Add "public"
+{
+    if (gameOverPanel != null)
+        gameOverPanel.SetActive(true);
+    Time.timeScale = 0f;
+}
 
-    public void RestartGame()
-    {
-        Time.timeScale = 1f; // Resume normal time
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+public void RestartGame()
+{
+    Time.timeScale = 1f; // Resume FIRST before loading scene
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+}
 }
