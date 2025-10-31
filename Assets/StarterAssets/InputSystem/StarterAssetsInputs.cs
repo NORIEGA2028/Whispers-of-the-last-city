@@ -12,6 +12,8 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
+		public bool attack;
+		public bool interact;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -19,6 +21,10 @@ namespace StarterAssets
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
+
+		[Header("Mobile Input")]
+		public MobileInputManager mobileInput;
+		public bool useMobileInput = false;
 
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
@@ -43,8 +49,29 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+
+		public void OnAttack(InputValue value)
+		{
+			AttackInput(value.isPressed);
+		}
+
+		public void OnInteract(InputValue value)
+		{
+			InteractInput(value.isPressed);
+		}
 #endif
 
+		void Update()
+		{
+			// Use mobile input if enabled
+			if (useMobileInput && mobileInput != null)
+			{
+				move = mobileInput.GetMoveInput();
+				sprint = mobileInput.IsSprinting();
+				attack = mobileInput.IsAttackPressed();
+				interact = mobileInput.IsInteractPressed();
+			}
+		}
 
 		public void MoveInput(Vector2 newMoveDirection)
 		{
@@ -64,6 +91,16 @@ namespace StarterAssets
 		public void SprintInput(bool newSprintState)
 		{
 			sprint = newSprintState;
+		}
+
+		public void AttackInput(bool newAttackState)
+		{
+			attack = newAttackState;
+		}
+
+		public void InteractInput(bool newInteractState)
+		{
+			interact = newInteractState;
 		}
 
 		private void OnApplicationFocus(bool hasFocus)
