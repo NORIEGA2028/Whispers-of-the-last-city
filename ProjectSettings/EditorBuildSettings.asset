@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Scene.unity
     guid: 2a78571c9f9cc43aea2b18ba4f7bb56e
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/Cutscene_Level1.unity
+    guid: bd4827e9166364be7bc9d277cec79ed4
+  - enabled: 1
     path: Assets/Scenes/Pause.unity
     guid: 571d05c50bebdb24c90ec127771aee4a
   m_configObjects:
