@@ -23,7 +23,8 @@ public class LevelSelect : MonoBehaviour
     
     public void LoadLevel1()
     {
-        SceneManager.LoadScene("Level 1");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Cutscene_Level1");
     }
     
     public void LoadLevel2()

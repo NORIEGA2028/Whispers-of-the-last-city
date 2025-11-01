@@ -39,7 +39,7 @@ public class PlayerAttack : MonoBehaviour
         // Try to find mobile input manager if not assigned
         if (mobileInput == null)
         {
-            mobileInput = FindObjectOfType<MobileInputManager>();
+            mobileInput = Object.FindFirstObjectByType<MobileInputManager>();
         }
     }
     

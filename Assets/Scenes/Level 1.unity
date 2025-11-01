@@ -2638,7 +2638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505753747}
   m_Layer: 0
-  m_Name: ======Audio=====
+  m_Name: ======Audio======
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3319,6 +3319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f402d989136ed4f0e8d50152aba2a7d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManager
+  musicSource: {fileID: 1951494627}
+  sfxSource: {fileID: 0}
 --- !u!1001 &1963133569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5140,9 +5142,13 @@ MonoBehaviour:
   look: {x: 0, y: 0}
   jump: 0
   sprint: 0
+  attack: 0
+  interact: 0
   analogMovement: 0
   cursorLocked: 0
   cursorInputForLook: 1
+  mobileInput: {fileID: 0}
+  useMobileInput: 0
 --- !u!4 &3561202354167897584
 Transform:
   m_ObjectHideFlags: 0

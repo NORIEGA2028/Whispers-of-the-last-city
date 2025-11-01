@@ -54,7 +54,7 @@ public class MonsterAIfight : MonoBehaviour
         m_Animator = GetComponent<Animator>();
 
         // Find the Timer script in the scene
-        timerScript = FindObjectOfType<Timer>();
+        timerScript = Object.FindFirstObjectByType<Timer>();
         if (timerScript == null)
         {
             Debug.LogWarning("Timer script not found in scene!");
