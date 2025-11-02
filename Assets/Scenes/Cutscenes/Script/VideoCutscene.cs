@@ -1,34 +1,31 @@
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class VideoCutscene : MonoBehaviour
 {
-    [SerializeField] private VideoPlayer videoPlayer;
-    [SerializeField] private string nextSceneName = "Level 1";
+    public VideoPlayer videoPlayer;
+    public string nextSceneName = "Level1"; 
+    public Button skipButton;
 
     void Start()
     {
-        // When the video finishes, this event will call OnVideoEnd
+        // Play the video automatically
         videoPlayer.loopPointReached += OnVideoEnd;
 
-        // Start playing automatically
-        videoPlayer.Play();
+        // Make sure the Skip button calls SkipCutscene when clicked
+        if (skipButton != null)
+            skipButton.onClick.AddListener(SkipCutscene);
     }
 
     void OnVideoEnd(VideoPlayer vp)
     {
-        // Load Level 1 after the cutscene ends
         SceneManager.LoadScene(nextSceneName);
     }
 
-    void Update()
+    public void SkipCutscene()
     {
-        // Optional: skip cutscene by pressing any key
-        if (Input.anyKeyDown)
-        {
-            videoPlayer.Stop();
-            SceneManager.LoadScene(nextSceneName);
-        }
+        SceneManager.LoadScene(nextSceneName);
     }
 }
