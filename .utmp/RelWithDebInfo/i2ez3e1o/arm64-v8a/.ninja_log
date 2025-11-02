@@ -1,0 +1,10 @@
+# ninja log v5
+3	1798	1762089485743410023	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	86602477dc776e6f
+1	1811	1762089485758191203	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1829deb040a73977
+6	1863	1762089485808765931	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	a3f80a27d72bf005
+0	1871	1762089485818476175	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	73cb1e799769b04d
+1	1968	1762089485917183832	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	15ec7927cfe92bbf
+10	2029	1762089485977341638	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9b9bc5895bfa9c5d
+1	2218	1762089486167479882	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	47272385a6a3c188
+0	2341	1762089486291396841	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	5520bccf01b0bfcd
+2342	2590	1762089486540847305	/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/i2ez3e1o/obj/arm64-v8a/libgame.so	b66f2985d3522d8f

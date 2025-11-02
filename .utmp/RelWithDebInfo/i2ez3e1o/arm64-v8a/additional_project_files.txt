@@ -1,0 +1,17 @@
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/GAToUnityCallbacks.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroEnd.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroHeaderBegin.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroSourceBegin.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAApplication.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAConfiguration.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGADebug.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAEvents.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAInput.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboard.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboardCallbacks.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGATypes.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAVersion.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGACallbacks.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAConfigurationCallbacks.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAKeyEventCallbacks.h
+/Users/sophiajulliad.dejesus/Downloads/Whispers-of-the-last-city/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAMotionEventCallbacks.h
