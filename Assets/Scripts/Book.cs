@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Book : MonoBehaviour
 {
+    [SerializeField] private AudioClip collectSound; 
+
     private void Start()
     {
         Debug.Log("Book initialized: " + gameObject.name);
@@ -26,7 +28,11 @@ public class Book : MonoBehaviour
         if (playerInventory != null)
         {
             Debug.Log("Player collected the book!");
+
+            MusicManager.Instance.PlaySFX(collectSound);
+
             playerInventory.PagesCollected();
+
             gameObject.SetActive(false);
         }
         else
